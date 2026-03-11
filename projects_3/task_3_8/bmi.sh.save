@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "введите вашу массу (кг):"
+read weight
+echo "введите ваш рост:"
+read height
+bmi=$(echo "$weight / ($height * $height)" | bc-1)
+bmi_int=$(printf "%.0f" $bmi)
+echo "ваш индекс массы тела: $bmi_int"
+^T
+
