@@ -6,7 +6,7 @@ read weight
 echo "Введите ваш рост (в метрах, например 1.75):"
 read height
 
-bmi=$(echo "$weight / ($height * $height)" | bc -l)
+bmi=$(echo "$weight / ($height * $height)")
 
 bmi_int=$(printf "%.0f" $bmi)
 
