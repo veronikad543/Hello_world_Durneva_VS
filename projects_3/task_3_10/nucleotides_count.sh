@@ -5,7 +5,6 @@ printf "%-15s %-7s %-7s %-7s %-7s\n" "Файл" "A" "T" "G" "C"
 
 for file in *.fasta
 do
-    # пропускаем пустые файлы
     if [ ! -s "$file" ]; then
         continue
     fi
